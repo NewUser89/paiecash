@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" />
+    <script src="{{ url_for('static', filename='jquery-3.6.1.min.js')}}"></script>
+    <style>
+        .mic-btn{
+          width:50px !important; 
+          height:50px !important;
+          background: #579ffb ipo !important;
+          border-radius: 50px !important;
+          cursor: pointer !important;
+          transition: all 0.3 ease-in !important;
+
+        }
+        .mic-btn:hover{
+          background: #026df8 !important;
+        }
+        .mic-btn:active{
+          background: #f87102 !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="msger">
+        <header class="msger-header">
+          <div class="msger-header-title">
+            <i class="fas fa-bug"></i> Math bot <i class="fas fa-bug"></i>
+          </div>
+        </header>
+    
+        <main class="msger-chat">
+          <div class="msg left-msg">
+            <div class="msg-img" style="background-image: url(../static/bot-icon.jpeg)"></div>
+     
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">Bot</div>
+                <div class="msg-info-time">12:45</div>
+              </div>
+    
+              <div class="msg-text">
+                Hi. I'm Melissa your math chatbot. How can I help you ?
+              </div>
+            </div>
+          </div>
+    
+        </main>
+    
+        <form class="msger-inputarea" id="input-form">
+          <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
+          <button type="submit" class="msger-send-btn">Send</button>
+          <img src="{{ url_for('static', filename='microphone.png')}}" class="mic-btn"/>
+        </form>
+      </section>
+<script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+<script>
+$(document).ready(function() {
+
+    const msgerForm = get(".msger-inputarea");
+    const msgerInput = get(".msger-input");
+    const microphone = document.querySelector('.mic-btn')
+    const msgerChat = get(".msger-chat");
+
+    // Icons made by Freepik from www.flaticon.com
+    const BOT_IMG = "{{ url_for('static', filename='bot-icon.jpeg')}}";
+    const PERSON_IMG = "https://www.flaticon.com/free-icons/user";
+    const BOT_NAME = "Bot";
+    const PERSON_NAME = "User";
+      $("form").on("submit", function(event) {
+              event.preventDefault();
+              
+              var msgText = msgerInput.value
+              if (!msgText) return;
+              appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
+             $.ajax({
+                  data: {
+                      msg: msgText,
+                  },
+                  type: "POST",
+                  url: "/get",
+              }).done(function(data) {
+                  botResponse(data);
+                  msgerInput.value = "";
+              });
+              
+          });
+    
+    function appendMessage(name, img, side, text) {
+      //   Simple solution for small apps
+      const msgHTML = `
+        <div class="msg ${side}-msg">
+          <div class="msg-img" style="background-image: url(${img})"></div>
+
+          <div class="msg-bubble">
+            <div class="msg-info">
+              <div class="msg-info-name">${name}</div>
+              <div class="msg-info-time">${formatDate(new Date())}</div>
+            </div>
+
+            <div class="msg-text">${text}</div>
+          </div>
+        </div>
+        `;
+
+      msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+      msgerChat.scrollTop += 500;
+    }
+    function botResponse(rawText) {
+
+      // Bot Response
+      console.log(rawText);
+      // console.log(data);
+      const msgText = rawText;
+      appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+      
+    }
+    function get(selector, root = document) {
+      return root.querySelector(selector);
+    }
+    function formatDate(date) {
+      const h = "0" + date.getHours();
+      const m = "0" + date.getMinutes();
+
+      return `${h.slice(-2)}:${m.slice(-2)}`;
+    }
+
+microphone.addEventListener('click',()=>startDictation());
+
+// Web speech recognition API
+function startDictation() {
+  msgerInput.value = "";
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+      var recognition = new webkitSpeechRecognition();
+
+      recognition.continuous = false;
+      recognition.interimResults = false;
+
+      recognition.lang = 'en-US';
+      recognition.start();
+
+      recognition.onresult = function (e) {
+        msgerInput.value = e.results[0][0].transcript;
+        recognition.stop();
+        document.querySelector(".msger-send-btn").click()
+      };
+
+      recognition.onerror = function (e) {
+        recognition.stop();
+      };
+    }
+  }
+    });
+
+</script>
+</body>
+
+</html>

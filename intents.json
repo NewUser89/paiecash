@@ -1,0 +1,799 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hello",
+        "Good day"
+
+      ],
+      "responses": [
+        "Hey :)",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "greetingfr",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Bonjour",
+        "Bonjour"
+
+      ],
+      "responses": [
+        "Hey :)",
+        "Bonjour, que puis-je faire pour vous ?",
+        "Bonjour, comment puis-je vous aider ?"
+      ]
+    },
+    {
+      "tag": "questions",
+      "patterns": [
+"How are you",
+        "What's up",
+        "whats up"
+
+      ],
+      "responses": [
+        "I'm great! How can I help?",
+        "Doing good! How can I help you?"
+      ]
+    },	
+    {
+      "tag": "questionsfr",
+      "patterns": [
+        "Comment allez-vous",
+        "Quoi de neuf",
+        "Quoi de neuf"
+
+      ],
+      "responses": [
+        "Je suis génial ! Comment puis-je vous aider ? ",
+        "Je me débrouille bien ! Comment puis-je vous aider ?"
+      ]
+    },	
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later!",
+        "Have a nice day",
+        "Bye!"
+      ]
+    },
+    {
+      "tag": "goodbyefr",
+      "patterns": ["Bye", "A plus tard", "Au revoir"],
+      "responses": [
+        "À tout à l'heure !",
+        "Bonne journée",
+        "Au revoir !"
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure!"]
+    },
+    {
+      "tag": "thanksfr",
+      "patterns": ["Merci", "Merci", "C'est utile", "Merci beaucoup !"],
+      "responses": ["Heureux de vous aider !", "Quand vous voulez !", "Avec plaisir !"]
+    },
+    
+        {"tag": "paie_cash",
+         "patterns": ["what is paiecash?", "what is your system","how can you define paie_cash" ],
+         "responses": ["is a company that is interested in technology, innovation on an international level, a company subject to French law and which develops digital solutions for the population in areas such as telephony, internet and television."],
+         "context": [""]
+        },
+        {"tag": "paiecash_function",
+         "patterns": [ "how does your solution function", "what is your solution all about", "how can  your solution help","what is paiecash offering","what are your objectives " ],
+         "responses": ["The Paiecash solution makes it possible to enrich the offer of online payments, markets and current activities of purchases and sales of services made by Internet users and the entire population. It therefore consists of the creation of a mobile application available on Android and IOS, as well as a web application so that each user can use them to carry out their money transactions, the creation of Dashbord (administrator interface) offered to each stakeholder or partners with management or administration needs (dashbord paycash administration, dashbord for distributors and resellers in Africa, dashbord for stores - supermarkets - companies - partner associations)"],
+         "context": [""]
+        },
+        {"tag": "paiecash_functionalites ",
+         "patterns": ["what does your system do", "what is your system able to do", "what is your system offering", "what can you  services offer", "what output is your system giving","what is your system output" ],
+         "responses": ["Money transfer between users,Money deposit from another economic operator,Withdrawal of money,Payment on merchant sites,Local payment (by phone number, QR code),sponsorship system (MLM marketing has 2 levels) and commissions,User account management,User management member of an association, supermarket, store.,Management of the 2nd card, depending on the marketing: One card purchased one card offered,Money savings,Credit Money contribution,Payroll agent management,Management of the super-administrator account (for managing the system of the solution)"],
+         "context": [""]
+        },
+        {"tag": "payment",
+         "patterns": ["how can i recharge my mobile","i want to recharge my mobile","can i recharge my mobile?"],
+         "responses": ["TO tranfer money do the following: go to our website http://www.paiecash.com and register if you haven't yetnext click on MON PAIECASH  the enter the required details from there click perfom transfer"],
+         "context": [""]
+        },
+        {"tag": "accountbalance",
+         "patterns": ["account balance", "balance in my account", "what is my account balance", "whats the balance on my account", "want to check my acct bal","credit card balance" ],
+         "responses": ["TO check account balance do the following; enter the phone number you registered with  on  http://www.paiecash.com a config code will be sent write the code on the chat then verify your balance"],
+         "context": [""]
+        },
+        {"tag": "register",
+         "patterns": ["how can i register myself","what is the registration process","start a relationship","looking to open an account","how can i apply","how to open an account","how to register","i want to apply","i want to sign up","can you help me with the process to register"],
+         "responses": [""],
+         "context": [""]
+        },
+
+       {
+          "tag": "Comment paiecash peut-il aider dans la gestion des ventes ?",
+          "patterns": ["Comment paiecash peut-il aider dans la gestion des ventes ?", "Fonctionnalités de paiecash pour les ventes.", "Expliquez l'impact de paiecash sur les ventes."],
+          "responses": ["paiecash permet de suivre les ventes, gérer la facturation, les commandes et la livraison, ainsi que gérer les catalogues et les prix des produits."]
+        },
+        {
+          "tag": "Comment paiecash peut-il aider dans la gestion des ventes ?en",
+          "patterns": ["How can paiecash help in sales management?", "Features of paiecash for sales.", "Explain the impact of paiecash on sales."],
+          "responses": ["paiecash allows you to track sales, manage invoicing, orders and delivery, as well as manage product catalogs and prices."]
+        },
+        {
+          "tag": "Comment paiecash simplifie-t-il le paiement ?",
+          "patterns": ["Comment paiecash simplifie-t-il le paiement ?", "Avantages de paiecash pour les paiements.", "Expliquez l'impact de paiecash sur les paiements."],
+          "responses": ["paiecash permet d'effectuer et de recevoir des paiements en toute sécurité dans les comptes PaieCash, 24h/24 et où que vous soyez."]
+        },
+        {
+          "tag": "Comment paiecash simplifie-t-il le paiement ?EN",
+          "patterns": ["How does paiecash simplify payments?", "Benefits of paiecash for payments.", "Explain the impact of paiecash on payments."],
+          "responses": ["paiecash allows you to make and receive payments securely in PaieCash accounts, 24 hours a day, wherever you are."]
+        },
+        {
+          "tag": "comptes_clients",
+          "patterns": ["Comment créer des comptes clients?", "Comment fermer des comptes clients?"],
+          "responses": ["Pour créer des comptes clients, accédez à l'onglet 'Administrateur' et suivez les instructions.", "La fermeture des comptes clients peut être effectuée dans l'onglet 'Administrateur'. Suivez les étapes pour clôturer un compte."]
+        },
+        {
+          "tag": "comptes_clientsEN",
+          "patterns": ["How to create customer accounts", "How to close customer accounts"],
+          "responses": ["To create customer accounts, access the 'Administrator' tab and follow the instructions.", "Customer accounts can be closed in the 'Administrator' tab. Follow the steps to close an account."]
+        },
+        {
+          "tag": "factures",
+          "patterns": ["Comment produire des factures instantanées?", "Comment produire des factures QRcode?"],
+          "responses": ["Les factures instantanées peuvent être générées en utilisant l'option dédiée dans l'onglet 'Administrateur'.", "Pour produire des factures avec QRcode, suivez les instructions spécifiques dans l'onglet 'Administrateur'."]
+        },
+        {
+          "tag": "facturesen",
+          "patterns": ["How to produce instant invoices", "How to produce QRcode invoices"],
+          "responses": ["Instant invoices can be generated using the dedicated option in the 'Administrator' tab.", "To produce invoices with QRcode, follow the specific instructions in the 'Administrator' tab."]
+        },
+        {
+          "tag": "sous_comptes",
+          "patterns": ["Comment créer des sous comptes clients?", "Comment fermer des sous comptes clients?"],
+          "responses": ["La création de sous comptes clients se fait via l'onglet dédié dans 'Administrateur'. Suivez les étapes pour créer des sous comptes.", "La fermeture des sous comptes clients peut être réalisée dans l'onglet 'Administrateur'. Suivez les instructions."]
+        },
+        {
+          "tag": "sous_comptesen",
+          "patterns": ["How do I create sub-accounts?", "How do I close sub-accounts?"],
+          "responses": ["Customer sub-accounts can be created via the dedicated 'Administrator' tab. Follow the steps to create sub-accounts.", "Customer sub-accounts can be closed in the 'Administrator' tab. Follow the instructions."]
+        },
+        {
+          "tag": "mdp",
+          "patterns": ["Comment changer mon mot de passe ?", "Comment changer mon mot de passe ?", "Comment changer mon mot de passe ?"],
+          "responses": ["Pour modifier le mot de passe, accédez à votre profil et suivez les instructions pour effectuer la modification."]
+        },
+        {
+          "tag": "mdpen",
+          "patterns": ["How can I change my password?","How do I change my password?","How can I change my password?"],
+          "responses": ["To change the password, access your profile and follow the instructions to make the change."]
+        },
+       
+        {
+          "tag": "validation_niveau",
+          "patterns": ["Comment fonctionne la validation en niveaux ?", "Processus de validation des demandes", "Qui valide ma demande de matériel ?"],
+          "responses": ["Chaque personne dans la hiérarchie a un niveau de validation en quantité de matériel et en finance. Votre demande sera automatiquement acheminée aux personnes concernées selon leur niveau de responsabilité pour approbation."]
+        },
+        {
+          "tag": "validation_niveauen",
+          "patterns": ["How does level validation work?", "Request validation process", "Who validates my material request?"],
+          "responses": ["Each person in the hierarchy has a validation level in material quantity and finance. Your request will automatically be routed to the appropriate people according to their level of responsibility for approval."]
+        },
+        {
+          "tag": "accords_envoyes",
+          "patterns": ["Comment saurai-je si ma demande est approuvée ?", "Notification d'approbation", "Réception des accords"],
+          "responses": ["Une fois que votre demande est approuvée, vous recevrez des accords par e-mail. Ces accords couvriront divers aspects tels que les matériaux, les finances et les achats de logiciels."]
+        },
+        {
+          "tag": "accords_envoyesen",
+          "patterns": ["How will I know if my application has been approved?", "Notification of approval", "Receipt of agreements"],
+          "responses": ["Once your application is approved, you will receive agreements by e-mail. These agreements will cover various aspects such as materials, finance and software purchases."]
+        },
+        {
+          "tag": "signature_electronique",
+          "patterns": ["Comment fonctionne la signature électronique ?", "Processus de signature des accords", "Comment signer électroniquement ?"],
+          "responses": ["La signature électronique est simple. Suivez les instructions fournies dans l'e-mail d'approbation pour signer électroniquement les accords. Cela permet de formaliser votre accord et de finaliser le processus."]
+        },
+        {
+          "tag": "signature_electroniqueen",
+          "patterns": ["How does electronic signature work?", "Agreement signing process", "How to sign electronically?"],
+          "responses": ["The electronic signature is simple. Follow the instructions provided in the approval e-mail to electronically sign the agreements. This formalizes your agreement and finalizes the process."]
+        },
+        {
+          "tag": "désign de l'application mobile paiecash qr",
+          "patterns": [
+            "Qu'est-ce que le désign de l'application mobile paiecash qr ?",
+            "Où puis-je trouver des informations sur le désign de l'application mobile paiecash qr ?"
+          ],
+          "responses": [
+            "Le désign de l'application mobile paiecash qr concerne la conception visuelle de l'interface utilisateur de l'application. Vous pouvez en savoir plus en consultant le lien suivant : [Lien vers Figma](https://www.figma.com/file/DCuVa2DXlebwOTYC3VIMNW/carte-paiecash?type=design&node-id=294%3A1976&mode=design&t=mieg0kLWF0BZa16R-1)."
+          ]
+        },
+        {
+          "tag": "désign de l'application mobile paiecash qren",
+          "patterns": [
+            "What is the paiecash qr mobile app design?",
+            "Where can I find information about the paiecash qr mobile app design?"
+          ],
+          "responses": [
+            "The paiecash qr mobile app design is all about the visual design of the app's user interface. You can learn more by visiting the following link: [Link to Figma](https://www.figma.com/file/DCuVa2DXlebwOTYC3VIMNW/carte-paiecash?type=design&node-id=294%3A1976&mode=design&t=mieg0kLWF0BZa16R-1)."
+          ]
+        },
+        {
+          "tag": "login",
+          "patterns": ["Comment me connecter?", "Identifiants de connexion", "Je n'arrive pas à me connecter."],
+          "responses": ["Pour vous connecter, accédez à https://qr.frontend.paiecash.fr/sign-in et utilisez les identifiants suivants : email - admin@paiecash.com, mot de passe - password."]
+        },
+        {
+          "tag": "loginen",
+          "patterns": ["How do I connect?", "Login credentials", "I can't connect."],
+          "responses": ["To log in, access https://qr.frontend.paiecash.fr/sign-in and use the following credentials: email - admin@paiecash.com, password - password."]
+        },
+        {
+          "tag": "Utilisation",
+          "patterns": ["Comment fonctionne la géolocalisation des utilisateurs de paiecash ?", "Comment activer la géolocalisation sur mon téléphone ?"],
+          "responses": ["La géolocalisation enregistre les coordonnées des utilisateurs ayant autorisé l'accès à leur position. Consultez nos guides pour activer la géolocalisation sur votre téléphone."]
+        },
+        {
+          "tag": "Utilisationen",
+          "patterns": ["How does geolocation work for paiecash users?", "How do I activate geolocation on my phone?"],
+          "responses": ["Geolocation records the coordinates of users who have authorized access to their location. Consult our guides to activate geolocation on your phone."]
+        },
+        {
+          "tag": "Fonctionnalitésen",
+          "patterns": ["What are the functionalities of the Geolocation module?", "What can we do with dealer geolocation?"],
+          "responses": ["The module geolocates retailers, distributors and sales representatives. It offers a list of resellers close to a user, making it easy to search for paiecash sales outlets."]
+        },
+        {
+          "tag": "Fonctionnalités",
+          "patterns": ["Quelles sont les fonctionnalités du module de Géolocalisation ?", "Que peut-on faire avec la géolocalisation des revendeurs ?"],
+          "responses": ["Le module permet de géolocaliser les revendeurs, distributeurs et commerciaux. Il offre la liste des revendeurs proches d'un utilisateur, facilitant ainsi la recherche de points de vente paiecash."]
+        },
+        {
+          "tag": "Avantagesen",
+          "patterns": ["What are the benefits of geolocation in paiecash?", "How does geolocation improve the user experience?"],
+          "responses": ["La géolocalisation réduit les temps de réponse, améliore l'expérience client et permet la recherche facile de points de vente proches.","Geolocation reduces response times, improves the customer experience and makes it easy to find nearby points of sale."]
+        },
+        {
+          "tag": "Avantages",
+          "patterns": ["Quels sont les avantages de la géolocalisation dans paiecash ?", "Comment la géolocalisation améliore-t-elle l'expérience utilisateur ?"],
+          "responses": ["La géolocalisation réduit les temps de réponse, améliore l'expérience client et permet la recherche facile de points de vente proches."]
+        },
+        {
+          "tag": "Mise à jour",
+          "patterns": ["Comment puis-je mettre à jour mes informations de géolocalisation ?", "Les informations de géolocalisation sont-elles mises à jour automatiquement ?"],
+          "responses": ["Les informations de géolocalisation sont mises à jour automatiquement lorsque les utilisateurs autorisent l'accès à leur position actuelle."]
+        },
+        {
+          "tag": "Mise à jouren",
+          "patterns": ["How do I update my geolocation information?", "Is geolocation information updated automatically?"],
+          "responses": ["Geolocation information is updated automatically when users authorize access to their current position."]
+        },
+        {
+          "tag": "dépôts",
+          "patterns": ["Comment effectuer un dépôt?", "Quelles sont les méthodes de dépôt?"],
+          "responses": [
+            "Les utilisateurs enregistrés peuvent effectuer un dépôt dans Paiecash. Vous pouvez sélectionner parmi nos méthodes de paiement pour effectuer un dépôt. Le montant déposé peut être choisi et ajouté au portefeuille que vous préférez."
+          ]
+        },
+        {
+          "tag": "dépôtsen",
+          "patterns": ["How do I make a deposit?", "What are the deposit methods?"],
+          "responses": [
+            "Registered users can make a deposit in Paiecash. You can select from our payment methods to make a deposit. The amount deposited can be selected and added to your preferred wallet."
+          ]
+        },
+        {
+          "tag": "carte-bancaire",
+          "patterns": ["Comment obtenir une carte bancaire?", "Quels sont les types de cartes disponibles?"],
+          "responses": [
+            "Lors de l'inscription, vous obtenez automatiquement une carte bancaire numérique. Si vous préférez une carte physique, vous devrez attendre généralement trois semaines. La carte physique est livrée chez un distributeur proche de chez vous en Afrique ou par courrier pour le reste du monde."
+          ]
+        },
+        {
+          "tag": "carte-bancaireen",
+          "patterns": ["How do I get a bank card?", "What types of cards are available?"],
+          "responses": [
+            "When you sign up, you automatically get a digital bank card. If you prefer a physical card, you'll usually have to wait three weeks. The physical card is delivered to a distributor near you in Africa, or by post for the rest of the world."
+          ]
+        },
+        {
+          "tag": "transferts",
+          "patterns": ["Comment effectuer un transfert d'argent?", "Quelles sont les options de transfert?"],
+          "responses": [
+            "Vous pouvez transférer de l'argent à tout utilisateur enregistré ou non enregistré. Les utilisateurs non enregistrés verront leur argent une fois inscrits. L'administrateur peut bloquer ou rembourser en cas de problème illégal."
+          ]
+        },
+       
+        {
+          "tag": "parrainage",
+          "patterns": ["Comment fonctionne le parrainage?", "Quels sont les avantages du parrainage?"],
+          "responses": [
+            "Le parrainage vous permet de gagner des commissions sur les transactions de vos filleuls. Chaque utilisateur a un code de parrainage unique. Plus vous parrainez d'utilisateurs, plus vous gagnez de commissions sur leurs transactions."
+          ]
+        },
+        {
+          "tag": "parrainageen",
+          "patterns": ["How does sponsorship work?", "What are the benefits of sponsorship?"],
+          "responses": [
+            "Referral allows you to earn commissions on your referrals' transactions. Each user has a unique referral code. The more users you refer, the more commissions you earn on their transactions."
+          ]
+        },
+        {
+          "tag": "commissions",
+          "patterns": ["How are commissions calculated?", "What are the commission rates?"],
+          "responses": [
+            "Commissions are calculated on the basis of revenue from the Paiecash system. Commission rates can be modified by the administrator. For example, 30% of revenues are allocated to distributors and 20% to resellers."
+          ]
+        },
+        {
+          "tag": "qu_est_ce_que_paiecash",
+          "patterns": [
+            "Qu'est-ce que Paiecash ?"
+          ],
+          "responses": [
+            "Paiecash est une plateforme de paiement en ligne et de gestion de cartes de fidélité. Elle propose diverses fonctionnalités pour les utilisateurs et les commerçants."
+          ]
+        },
+        {
+          "tag": "fonctionnalites_paiecash",
+          "patterns": [
+            "Quelles sont les fonctionnalités de Paiecash ?"
+          ],
+          "responses": [
+            "Paiecash offre diverses fonctionnalités telles que les paiements en ligne, la gestion des cartes de fidélité, la création de codes QR pour les paiements et les promotions, ainsi que la possibilité d'envoyer des notifications aux membres."
+          ]
+        },
+        {
+          "tag": "inscription_paiecash",
+          "patterns": [
+            "Comment puis-je m'inscrire sur Paiecash ?","Comment puis-je m'inscrire à Paiecash ?"
+          ],
+          "responses": [
+            "Vous pouvez vous inscrire sur Paiecash en créant un compte via l'application mobile ou le site web. Suivez les instructions fournies pour compléter le processus d'inscription."
+          ]
+        },
+        {
+          "tag": "cartes_fidelite_paiecash",
+          "patterns": [
+            "Comment fonctionnent les cartes de fidélité sur Paiecash ?"
+          ],
+          "responses": [
+            "Les cartes de fidélité de Paiecash permettent aux utilisateurs de cumuler des points d'achat et de bénéficier de réductions, de promotions et de cadeaux chez les commerçants participants."
+          ]
+        },
+        {
+          "tag": "codes_qr_paiecash",
+          "patterns": [
+            "Comment puis-je utiliser les codes QR de Paiecash ?"
+          ],
+          "responses": [
+            "Les codes QR de Paiecash peuvent être utilisés pour effectuer des paiements rapides en scannant le code avec l'application. Ils peuvent également être utilisés pour les promotions et les réductions dans les magasins partenaires."
+          ]
+        },
+        {
+          "tag": "inscription_paiecashen",
+          "patterns": [
+            "How do I register with Paiecash?","How do I do a Paiecash registration?","How do I sign up for Paiecash?"
+          ],
+          "responses": [
+            "You can register for Paiecash by creating an account via the mobile app or website. Follow the instructions provided to complete the registration process."
+          ]
+        },
+        {
+          "tag": "cartes_fidelite_paiecashen",
+          "patterns": [
+            "How do loyalty cards work on Paiecash?","How does a loyalty card work with Paiecash?","How do loyalty cards work with Paiecash?","How do loyalty cards work on Paiecash?"
+          ],
+          "responses": [
+            "Paiecash loyalty cards allow users to accumulate purchase points and benefit from discounts, promotions and gifts at participating merchants."
+          ]
+        },
+        {
+          "tag": "codes_qr_paiecashen",
+          "patterns": [
+            "How can I use Paiecash QR codes?","How can I use the QR codes provided by Paiecash?","How can I use QR Codes?","How do I use Paiecash QR Codes?"
+          ],
+          "responses": [
+            "Paiecash QR codes can be used to make quick payments by scanning the code with the app. They can also be used for promotions and discounts in partner stores."
+          ]
+        },
+        {
+          "tag": "systeme_parrainage_paiecash",
+          "patterns": [
+            "Comment fonctionne le système de parrainage sur Paiecash ?"
+          ],
+          "responses": [
+            "Le système de parrainage de Paiecash vous permet de parrainer d'autres utilisateurs et de gagner des récompenses. Vous recevrez un pourcentage des achats effectués par vos filleuls."
+          ]
+        },
+        {
+          "tag": "avantages_club_foot_paiecash",
+          "patterns": [
+            "Quels sont les avantages d'utiliser Paiecash dans un club de foot ?"
+          ],
+          "responses": [
+            "Paiecash offre des avantages aux clubs de football, tels que la possibilité de proposer des promotions aux membres, de gérer les affiliations et les paiements des supporters, ainsi que de faciliter les achats de billets et de produits."
+          ]
+        },
+        {
+          "tag": "paiement_qr_code_paiecash",
+          "patterns": [
+            "Comment fonctionne le paiement par QR code sur Paiecash ?"
+          ],
+          "responses": [
+            "Le paiement par QR code sur Paiecash permet aux utilisateurs de scanner le code avec l'application pour effectuer des paiements instantanés. Les détails de la transaction sont générés dans le code."
+          ]
+        },
+        {
+          "tag": "systeme_parrainage_paiecashen",
+          "patterns": [
+            "How does the Paiecash referral system work?","How does Paiecash referral work?","How do Paiecash referrals work?"
+          ],
+          "responses": [
+            "Paiecash's referral system allows you to refer other users and earn rewards. You'll receive a percentage of the purchases made by your referrals."
+          ]
+        },
+        {
+          "tag": "avantages_club_foot_paiecashen",
+          "patterns": [
+            "What are the advantages of using Paiecash in a soccer club?","What are the advantages of the use of Paiecash in a football club?","What are the advantages of the use of Paiecash in a football club?","What are the advantages of using Paiecash in a football club?"
+          ],
+          "responses": [
+            "Paiecash offers advantages to soccer clubs, such as the ability to offer promotions to members, manage supporters' memberships and payments, as well as facilitate ticket and product purchases."
+          ]
+        },
+        {
+          "tag": "paiement_qr_code_paiecashen",
+          "patterns": [
+            "How does QR code payment work on Paiecash?","How does paying with a QR Code on Paiecash work?","How does the payment with a QR code on Paiecash work?","How do QR code payments work with Paiecash?"
+          ],
+          "responses": [
+            "QR code payment on Paiecash allows users to scan the code with the app to make instant payments. Transaction details are generated in the code."
+          ]
+        },
+        {
+          "tag": "support_client_paiecash",
+          "patterns": [
+            "Comment puis-je contacter le support client de Paiecash ?"
+          ],
+          "responses": [
+            "Vous pouvez contacter le support client de Paiecash via l'application en utilisant la fonction de messagerie ou en envoyant un e-mail à l'adresse de support fournie sur le site web."
+          ]
+        },
+        {
+          "tag": "promotions_nouvelles_fonctionnalites_paiecash",
+          "patterns": [
+            "Comment être informé des promotions et des nouvelles fonctionnalités sur Paiecash ?"
+          ],
+          "responses": [
+            "Vous serez informé des promotions et des nouvelles fonctionnalités de Paiecash via des notifications dans l'application, des e-mails et des annonces sur le site web."
+          ]
+        },
+        {
+          "tag": "mise_a_jour_informations_compte_paiecash",
+          "patterns": [
+            "Comment mettre à jour mes informations de compte sur Paiecash ?"
+          ],
+          "responses": [
+            "Vous pouvez mettre à jour vos informations de compte sur Paiecash en accédant à vos paramètres de profil dans l'application ou sur le site web et en modifiant les détails nécessaires."
+          ]
+        }, 
+        {
+          "tag": "support_client_paiecashen",
+          "patterns": [
+            "How can I contact Paiecash customer support?","How do I contact Paiecash customer support?","How do I get in touch with Paiecash customer support?","How can I get in touch with Paiecash customer support?","How do I get in touch with Paiecash's after-sales service?"
+          ],
+          "responses": [
+            "You can contact Paiecash customer support via the application using the messaging function or by sending an e-mail to the support address provided on the website."
+          ]
+        },
+        {
+          "tag": "promotions_new_features_paiecash",
+          "patterns": [
+            "How can I find out about promotions and new features on Paiecash?","How can I find out about Paiecash promotions and new features?","How can I keep informed about Paiecash offers and new features?","How can I find out about the promotions and new features that Paiecash has to offer?","How can I stay informed about Paiecash promotions and new features?"
+          ],
+          "responses": [
+            "You'll be informed about Paiecash promotions and new features via notifications in the app, emails and announcements on the website."
+          ]
+        },
+        {
+          "tag": "mise_a_jour_informations_compte_paiecashen",
+          "patterns": [
+            "How do I update my account information on Paiecash?","How do I update my account details on Paiecash?","How do I update my account information on the Paiecash website?","How do I update my account details with Paiecash?","How do I update my account information with PayCash?"
+          ],
+          "responses": [
+            "You can update your account information on Paiecash by accessing your profile settings in the app or on the website and changing the necessary details."
+          ]
+        },
+        {
+          "tag": "gestion_partenariats_commercants_paiecash",
+          "patterns": [
+          "Comment fonctionne la gestion des partenariats avec les commerçants sur Paiecash ?"
+          ],
+          "responses": [
+          "Paiecash permet aux commerçants de créer des offres et des promotions pour les utilisateurs. Les utilisateurs peuvent profiter de réductions et de récompenses en effectuant des achats chez les partenaires de Paiecash."
+          ]
+          },
+          {
+          "tag": "suivi_transactions_paiements_paiecash",
+          "patterns": [
+          "Comment puis-je suivre mes transactions et paiements sur Paiecash ?"
+          ],
+          "responses": [
+          "Vous pouvez suivre vos transactions et paiements sur Paiecash en consultant l'historique des transactions dans l'application. Vous y trouverez des détails sur vos achats et vos paiements."
+          ]
+          },
+          {
+          "tag": "mesures_securite_paiecash",
+          "patterns": [
+          "Quelles sont les mesures de sécurité mises en place par Paiecash ?"
+          ],
+          "responses": [
+          "Paiecash utilise des mesures de sécurité avancées pour protéger vos données personnelles et vos informations de paiement. Le paiement par QR code et la connexion sécurisée font partie des méthodes de sécurité."
+          ]
+          },
+          {
+            "tag": "gestion_partenariats_commercants_paiecashen",
+            "patterns": [
+            "How does merchant partnership management work on Paiecash?","How does the management of the merchant partnership work on Paiecash?","How to manage merchant partnerships with Paiecash?","How Paiecash's merchant partnership management works."
+            ],
+            "responses": [
+            "Paiecash allows merchants to create offers and promotions for users. Users can enjoy discounts and rewards by making purchases from Paiecash partners."
+            ]
+            },
+            {
+            "tag": "suivi_transactions_paiements_paiecashen",
+            "patterns": [
+            "How can I track my transactions and payments on Paiecash?","How can I have an overview of my transactions and payments on Paiecash?","How can I keep track of my transactions and payments on Paiecash?","How can I track my transactions and payments with Paiecash?"
+            ],
+            "responses": [
+            "You can track your transactions and payments on Paiecash by consulting the transaction history in the application. There you'll find details of your purchases and payments."
+            ]
+            },
+            {
+            "tag": "mesures_securite_paiecashen",
+            "patterns": [
+            "What security measures has Paiecash implemented?","What security measures does Paiecash have in place?","What security measures has Paiecash put in place?","What security measures does Paiecash have in place?"
+            ],
+            "responses": [
+            "Paiecash uses advanced security measures to protect your personal data and payment information. QR code payment and secure connection are among the security methods."
+            ]
+            },
+          {
+          "tag": "systeme_cashback_paiecash",
+          "patterns": [
+          "Comment fonctionne le système de cashback pour les utilisateurs de Paiecash ?"
+          ],
+          "responses": [
+          "Le système de cashback de Paiecash permet aux utilisateurs de gagner de l'argent en effectuant des achats chez les commerçants partenaires. Une partie du montant dépensé est reversée sous forme de cashback."
+          ]
+          },
+          {
+            "tag": "Qu'est-ce que PaieCash ?",
+            "patterns": [
+              "Qu'est-ce que PaieCash ?"
+            ],
+            "responses": [
+              "PaieCash est une entreprise innovante opérant en Afrique, offrant des solutions numériques dans les domaines de la téléphonie, d'Internet et de la télévision. Notre objectif est de simplifier les transactions et les paiements en ligne pour tout le monde."
+            ]
+          },
+          {
+            "tag": "Objectif du projet",
+            "patterns": [
+              "Quel est l'objectif du projet PaieCash ?"
+            ],
+            "responses": [
+              "Le projet vise à créer une application mobile sur Android et IOS, ainsi qu'un site web, permettant aux utilisateurs de réaliser des transactions financières, d'envoyer et de recevoir de l'argent, d'effectuer des paiements en ligne, et bien plus encore."
+            ]
+          },
+          {
+            "tag": "systeme_cashback_paiecashen",
+            "patterns": [
+            "How does the cashback system work for Paiecash users?","How does the cash back system work for the users of Paiecash?","How does the Paiecash cashback system work?","How does the rebate system work for Paiecash users?"
+            ],
+            "responses": [
+            "Paiecash's cashback system allows users to earn money by making purchases from partner merchants. A portion of the amount spent is paid back in the form of cashback."
+            ]
+            },
+            {
+              "tag": "What is PaieCash?",
+              "patterns": [
+                "What is PaieCash?"
+              ],
+              "responses": [
+                "PaieCash is an innovative company operating in Africa, offering digital solutions in the fields of telephony, Internet and television. Our goal is to simplify online transactions and payments for everyone."
+              ]
+            },
+            {
+              "tag": "Project objective",
+              "patterns": [
+                "What is the objective of the PaieCash project?","What does the PaieCash project aim to achieve?","What is the PaieCash project's objective?","What is the goal of the PaieCash project?"
+              ],
+              "responses": [
+                "The project aims to create a mobile app on Android and IOS, as well as a website, allowing users to perform financial transactions, send and receive money, make online payments, and much more."
+              ]
+            },
+          {
+            "tag": "Fonctionnalités principales",
+            "patterns": [
+              "Quelles sont les fonctionnalités principales de l'application PaieCash ?"
+            ],
+            "responses": [
+              "L'application PaieCash propose une gamme complète de services : transferts d'argent entre utilisateurs, dépôts et retraits, paiements en ligne sur des sites marchands, gestion de comptes utilisateurs, échanges de devises, épargne, crédits, et bien d'autres."
+            ]
+          },
+          {
+            "tag": "Différence avec la concurrence",
+            "patterns": [
+              "Comment PaieCash se démarque-t-il de la concurrence ?"
+            ],
+            "responses": [
+              "Nous rassemblons une variété de moyens de paiement numérique en une seule application conviviale. De plus, notre portée internationale vous permet d'effectuer des transactions en Afrique et à l'international en toute fiabilité."
+            ]
+          },
+          {
+            "tag": "Conception des interfaces",
+            "patterns": [
+              "Comment sont conçus les interfaces de PaieCash ?"
+            ],
+            "responses": [
+              "Nos interfaces suivent les normes ergonomiques de l'UI/UX design, garantissant une expérience utilisateur intuitive et conviviale. Nous respectons les normes ISO 26800:2011 pour une expérience optimale."
+            ]
+          },
+          {
+            "tag": "Avantages du projet",
+            "patterns": [
+              "Quels sont les avantages du projet PaieCash ?"
+            ],
+            "responses": [
+              "PaieCash résout le problème du manque de liquidités en Afrique. Il facilite les paiements entre acteurs économiques et offre une solution de paiement rapide et fiable pour tous."
+            ]
+          },
+          {
+            "tag": "Difference with the competition",
+            "patterns": [
+              "How does PaieCash stand out from the competition?","How does PaieCash differ from competing?","What makes PaieCash stand out from the rest of the competition?","What makes PaieCash different from its competitors?"
+            ],
+            "responses": [
+              "We bring together a variety of digital payment methods in one user-friendly application. What's more, our international reach allows you to make transactions in Africa and internationally with complete reliability."
+            ]
+          },
+          {
+            "tag": "Interface design",
+            "patterns": [
+              "How are PaieCash's interfaces designed?","What is the interface design of PaieCash?","How are the interfaces of the PaieCash system designed?","What is the interface of PaieCash?"
+            ],
+            "responses": [
+              "Our interfaces follow the ergonomic standards of UI/UX design, guaranteeing an intuitive, user-friendly experience. We comply with ISO 26800:2011 standards for an optimal experience."
+            ]
+          },
+          {
+            "tag": "Project benefits",
+            "patterns": [
+              "What are the benefits of the PaieCash project?","How does the PaieCash project benefit me?","What are the advantages of the PaieCash project?","What are the advantages of the PaieCash scheme?"
+            ],
+            "responses": [
+              "PaieCash solves the problem of cash shortages in Africa. It facilitates payments between economic players and offers a fast, reliable payment solution for all."
+            ]
+          },
+          {
+            "tag": "Devenir un utilisateur",
+            "patterns": [
+              "Comment puis-je devenir un utilisateur de PaieCash ?"
+            ],
+            "responses": [
+              "Toute personne possédant un téléphone portable peut devenir un utilisateur. Si vous souhaitez effectuer des transactions en ligne, notre application est là pour vous."
+            ]
+          },
+          {
+            "tag": "Budget de développement",
+            "patterns": [
+              "Quel est le budget pour le développement de l'application ?"
+            ],
+            "responses": [
+              "Le budget varie en fonction du développement, de la sécurité et du déploiement. Contactez-nous pour une estimation personnalisée."
+            ]
+          },
+          {
+            "tag": "Disponibilité de l'application",
+            "patterns": [
+              "Quand l'application sera-t-elle disponible ?"
+            ],
+            "responses": [
+              "La date de livraison dépend de la taille du projet, mais soyez assuré que nous travaillons dur pour vous offrir la meilleure expérience dans les plus brefs délais."
+            ]
+          },
+          {
+            "tag": "Become a user",
+            "patterns": [
+              "How do I become a PaieCash user?","How do I become a user of the PaieCash system?","How do I use PaieCash?","How do I get started?"
+            ],
+            "responses": [
+              "Anyone with a cell phone can become a user. If you want to make online transactions, our application is there for you."
+            ]
+          },
+          {
+            "tag": "Development budget",
+            "patterns": [
+              "What is the budget for application development?","What's the budget for developing the application?","What is the budget for the development of the application?","How much does application development cost?"
+            ],
+            "responses": [
+              "The budget varies depending on development, security and deployment. Contact us for a personalized estimate."
+            ]
+          },
+          {
+            "tag": "Application availability",
+            "patterns": [
+              "When will the application be available?","When is the application going to be available?","When will the application be ready?","When will it arrive?"
+            ],
+            "responses": [
+              "The delivery date depends on the size of the project, but rest assured that we're working hard to give you the best experience as soon as possible."
+            ]
+          },
+          {
+            "tag": "Obtenir de l'aide",
+            "patterns": [
+              "Comment puis-je obtenir de l'aide en cas de problème ?"
+            ],
+            "responses": [
+              "Vous pouvez contacter notre équipe d'assistance via l'application ou notre site web. Nous sommes là pour vous aider à chaque étape."
+            ]
+          },
+          {
+            "tag": "Plus d'informations sur les fonctionnalités",
+            "patterns": [
+              "Où puis-je trouver plus d'informations sur les fonctionnalités de PaieCash ?"
+            ],
+            "responses": [
+              "Consultez notre document de spécifications fonctionnelles pour obtenir une vue d'ensemble détaillée des fonctionnalités : Lien vers le document."
+            ]
+          },
+          {
+            "tag": "Maquettes de l'application",
+            "patterns": [
+              "Où puis-je voir les maquettes de l'application ?"
+            ],
+            "responses": [
+              "Les maquettes actuelles sont disponibles ici : Lien vers les maquettes."
+            ]
+          } , 
+          {
+            "tag": "Get help",
+            "patterns": [
+              "How can I get help if I have a problem?","If I have a problem, how can I get help?","If I'm struggling, how can I get help?","If I have a problem, how do I go about getting help?"
+            ],
+            "responses": [
+              "You can contact our support team via the app or our website. We're here to help you every step of the way."
+            ]
+          },
+          {
+            "tag": "More information on features",
+            "patterns": [
+              "Where can I find more information about PaieCash features?","Where can I find more information about the features of PaieCash?","Where can I find out more about how PaieCash works?","Where can I find more information about the features of the PaieCash system?","Where can I find more information on PaieCash functions?"
+            ],
+            "responses": [
+              "See our functional specifications document for a detailed overview of features: Link to document."
+            ]
+          },
+          {
+            "tag": "Application mockups",
+            "patterns": [
+              "Where can I see the application mockups?","Where can I have a look at the application mock-ups?","Where can I see the mock-ups of the application?","Where can I see the mock-ups?"
+            ],
+            "responses": [
+              "The current mockups are available here : Link to mockups."
+            ]
+          }
+   
+  ]
+}
