@@ -1,4 +1,0 @@
-pip install tensorflow==2.9.0
-pip install  flask
-pip install pyttsx3
-pip install pyaudio
